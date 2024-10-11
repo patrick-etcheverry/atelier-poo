@@ -1,3 +1,8 @@
 <?php
+include_once "classes/recette.class.php";
 
-echo "<h1>Bienvenue dans l'atelier POO de la SAE 3.01 !</h1>";
+// Création de la recette de l'omelette aux piments
+$recette = new Recette(1, "Omelette aux piments", 
+"Battre les oeufs, saler, ajouter les piments et cuire le tout dans une poele anti-adhésive.", 
+"images/omelette_piments.jpg");
+$recette->afficher();
